@@ -12,6 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
+//User
 $factory->define(CodeDelivery\Models\User::class, function (Faker\Generator $faker) {
     static $password;
 
@@ -23,9 +24,22 @@ $factory->define(CodeDelivery\Models\User::class, function (Faker\Generator $fak
     ];
 });
 
+
+//Category
 $factory->define(CodeDelivery\Models\Category::class, function (Faker\Generator $faker) {
 
     return [
         'name' => $faker->word
+    ];
+});
+
+
+//Product
+$factory->define(CodeDelivery\Models\Product::class, function (Faker\Generator $faker) {
+    
+    return [
+        'name'          => $faker->word,
+        'description'   => $faker->sentence(),
+        'price'         => $faker->numberBetween(10,50)
     ];
 });
