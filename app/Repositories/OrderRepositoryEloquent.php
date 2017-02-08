@@ -5,7 +5,7 @@ namespace CodeDelivery\Repositories;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
 use CodeDelivery\Repositories\OrderRepository;
-use CodeDelivery\Entities\Order;
+use CodeDelivery\Models\Order;
 use CodeDelivery\Validators\OrderValidator;
 
 /**

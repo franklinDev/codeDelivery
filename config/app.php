@@ -176,6 +176,7 @@ return [
         // CodeDelivery\Providers\BroadcastServiceProvider::class,
         CodeDelivery\Providers\EventServiceProvider::class,
         CodeDelivery\Providers\RouteServiceProvider::class,
+        CodeDelivery\Providers\RepositoryServiceProvider::class,
 
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
