@@ -2,12 +2,15 @@
 
 namespace CodeDelivery\Models;
 
+use Prettus\Repository\Contracts\Transformable;
+use Prettus\Repository\Traits\TransformableTrait;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+
+class User extends Authenticatable implements Transformable
 {
-    use Notifiable;
+    use TransformableTrait, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -26,10 +29,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-    
+
     public function client()
     {
         return $this->hasOne(Client::class);
     }
-    
 }
