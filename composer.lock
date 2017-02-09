@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "735a62209004976f76530a18d30ea647",
-    "content-hash": "e45768fe4da2ca2b4c3b81a153b148c3",
+    "hash": "7a4cc03addcd7be5337e894a0e270357",
+    "content-hash": "ee197a77235fc22bf33473d5fb9d356b",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -505,6 +505,52 @@
                 "storage"
             ],
             "time": "2017-01-23 10:32:09"
+        },
+        {
+            "name": "marcuscampos/scafold",
+            "version": "V1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marcus-campos/scafold.git",
+                "reference": "9e5aed38ed3ec3e5bf98bb708aa026b672a9d6d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marcus-campos/scafold/zipball/9e5aed38ed3ec3e5bf98bb708aa026b672a9d6d3",
+                "reference": "9e5aed38ed3ec3e5bf98bb708aa026b672a9d6d3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MarcusCampos\\Scafold\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Bestmomo",
+                    "email": "grandheretique@free.fr"
+                },
+                {
+                    "name": "Marcus Campos",
+                    "email": "marcus.campos@devyzi.com"
+                }
+            ],
+            "description": "To add scafold to Laravel 5.3",
+            "homepage": "http://github.com/bestmomo/scafold",
+            "time": "2016-09-13 04:55:45"
         },
         {
             "name": "monolog/monolog",

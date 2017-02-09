@@ -179,6 +179,7 @@ return [
         CodeDelivery\Providers\RepositoryServiceProvider::class,
 
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        MarcusCampos\Scafold\ScafoldServiceProvider::class,
 
     ],
 
